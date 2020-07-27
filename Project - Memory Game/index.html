@@ -1,174 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Memory Game</title>
-        <link rel="stylesheet" href="styles.css" />
-    </head>
-    <body>
-        <section class="outer">
-            <section class="controlArea">
-                <button>new game</button><br />
-                <button>Quit game</button>
-            </section>
-            <section class="memory-game">
-                <div class="memory-card" data-name="angular">
-                    <img
-                        src="img/angular.svg"
-                        alt="angular"
-                        class="front-facing"
-                    />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="angular">
-                    <img
-                        src="img/angular.svg"
-                        alt="angular"
-                        class="front-facing"
-                    />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="outer">
+      <section class="timerarea">Timer</section>
+      <section class="controlArea">
+        Score Board
+      </section>
+      <section class="memory-game">
+        <div class="memory-card" data-name="1">
+          <img src="img/1.jpg" alt="1" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="1">
+          <img src="img/1.jpg" alt="1" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
 
-                <div class="memory-card" data-name="aurelia">
-                    <img
-                        src="img/aurelia.svg"
-                        alt="aurelia"
-                        class="front-facing"
-                    />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="aurelia">
-                    <img
-                        src="img/aurelia.svg"
-                        alt="aurelia"
-                        class="front-facing"
-                    />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
+        <div class="memory-card" data-name="2">
+          <img src="img/2.png" alt="2" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="2">
+          <img src="img/2.png" alt="2" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
 
-                <div class="memory-card" data-name="backbone">
-                    <img
-                        src="img/backbone.svg"
-                        alt="backbone"
-                        class="front-facing"
-                    />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="backbone">
-                    <img
-                        src="img/backbone.svg"
-                        alt="backbone"
-                        class="front-facing"
-                    />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="ember">
-                    <img src="img/ember.svg" alt="ember" class="front-facing" />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="ember">
-                    <img src="img/ember.svg" alt="ember" class="front-facing" />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="react">
-                    <img src="img/react.svg" alt="react" class="front-facing" />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="react">
-                    <img src="img/react.svg" alt="react" class="front-facing" />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="vue">
-                    <img src="img/vue.svg" alt="vue" class="front-facing" />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="vue">
-                    <img src="img/vue.svg" alt="vue" class="front-facing" />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="vue">
-                    <img src="img/vue.svg" alt="vue" class="front-facing" />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="vue">
-                    <img src="img/vue.svg" alt="vue" class="front-facing" />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="vue">
-                    <img src="img/vue.svg" alt="vue" class="front-facing" />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-                <div class="memory-card" data-name="vue">
-                    <img src="img/vue.svg" alt="vue" class="front-facing" />
-                    <img
-                        src="img/js-badge.svg"
-                        alt="js-badge"
-                        class="back-facing"
-                    />
-                </div>
-            </section>
-        </section>
-        <script src="scripts.js"></script>
-    </body>
+        <div class="memory-card" data-name="3">
+          <img src="img/3.jpg" alt="3" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="3">
+          <img src="img/3.jpg" alt="3" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="4">
+          <img src="img/4.jpg" alt="4" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="4">
+          <img src="img/4.jpg" alt="4" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="5">
+          <img src="img/5.png" alt="5" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="5">
+          <img src="img/5.png" alt="5" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="6">
+          <img src="img/6.png" alt="6" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="6">
+          <img src="img/6.png" alt="6" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="7">
+          <img src="img/7.png" alt="7" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="7">
+          <img src="img/7.png" alt="7" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="8">
+          <img src="img/8.jpg" alt="8" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+        <div class="memory-card" data-name="8">
+          <img src="img/8.jpg" alt="8" class="front-facing" />
+          <img src="img/js-badge.jpg" alt="js-badge" class="back-facing" />
+        </div>
+      </section>
+      <section class="buttonArea">controls</section>
+    </section>
+    <script src="scripts.js"></script>
+  </body>
 </html>
